@@ -21,10 +21,41 @@
   <title>With What's Left of Me — Deemed to be Human</title>
   <link rel="stylesheet" href="../styles.css">
   <style>
-    .poem-body{font-size:clamp(1.16rem,2vw,1.38rem);line-height:1.9}
-    .poem-body .stanza{margin:0 0 2.15em}
-    .poem-body .stanza p{margin:0}
-    .poem-body p:first-child::first-letter{float:none;font-size:inherit;line-height:inherit;padding:0;color:inherit}
+    .poem-body {
+      font-size: clamp(1.14rem, 2vw, 1.34rem);
+      line-height: 1.95;
+    }
+    .poem-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .poem-body .stanza {
+      margin: 0 0 2.45em;
+    }
+    .poem-body .stanza p {
+      margin: 0;
+    }
+    .poem-emphasis {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .poem-body p:first-child::first-letter {
+      float: none;
+      font-size: inherit;
+      line-height: inherit;
+      padding: 0;
+      color: inherit;
+    }
+    .poem-footer {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    @media (max-width: 760px) {
+      .poem-wrap {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -41,23 +72,59 @@
     <article>
       <header class="article article-header">
         <p class="eyebrow article-meta"><span>Poetry</span><span>10 September 2026</span><span>1 min read</span></p>
-        <h1>With What's Left of Me</h1>
+        <h1>With <span style="color:var(--accent)">What's Left of Me</span></h1>
       </header>
       <figure class="article-hero">
         <img src="../assets/with-whats-left-of-me.jpg" alt="A solitary figure above a misty valley under dark skies">
       </figure>
       <div class="article article-body poem-body">
-        <div class="stanza"><p>Dark and deep I went afar,</p><p>Nothing off the usual and at par,</p></div>
-        <div class="stanza"><p>With invisible aim as small as a bee,</p><p>I ran with what's left of me.</p></div>
-        <div class="stanza"><p>Breathless lungs, but a thirst for dream,</p><p>And with no mouth yet I must scream,</p></div>
-        <div class="stanza"><p>Imagining what it means to be free,</p><p>I crawl deeper with what's left of me.</p></div>
-        <div class="stanza"><p>The more I sought, the less I found,</p><p>Illusion says you're running straight, but you're running around.</p></div>
-        <div class="stanza"><p>Contemplating how grows a tree,</p><p>And I sat down with what's left of me.</p></div>
-        <div class="stanza"><p>"Alive, am I?" I thought that day,</p><p>I bowed down and began to pray.</p></div>
-        <div class="stanza"><p>I surrendered, fell to Thee,</p><p>"Take whatever's left of me."</p></div>
-        <div class="article-end" aria-hidden="true"></div>
-        <p class="article-byline">Written by <span>Piyush Yadav</span></p>
-        <a class="back-link" href="../poetry.html">← Back to poetry</a>
+        <div class="poem-wrap">
+          <div class="stanza">
+            <p>Dark and deep I went afar,</p>
+            <p>Nothing off the usual and at par,</p>
+          </div>
+
+          <div class="stanza">
+            <p>With invisible aim as small as a bee,</p>
+            <p>I ran with <span class="poem-emphasis">what's left of me</span>.</p>
+          </div>
+
+          <div class="stanza">
+            <p>Breathless lungs, but a thirst for dream,</p>
+            <p>And with no mouth yet I must scream,</p>
+          </div>
+
+          <div class="stanza">
+            <p>Imagining what it means to be free,</p>
+            <p>I crawl deeper with <span class="poem-emphasis">what's left of me</span>.</p>
+          </div>
+
+          <div class="stanza">
+            <p>The more I sought, the less I found,</p>
+            <p>Illusion says you're running straight, but you're running around.</p>
+          </div>
+
+          <div class="stanza">
+            <p>Contemplating how grows a tree,</p>
+            <p>And I sat down with <span class="poem-emphasis">what's left of me</span>.</p>
+          </div>
+
+          <div class="stanza">
+            <p>"Alive, am I?" I thought that day,</p>
+            <p>I bowed down and began to pray.</p>
+          </div>
+
+          <div class="stanza">
+            <p>I surrendered, fell to Thee,</p>
+            <p>"Take whatever's <span class="poem-emphasis">left of me</span>."</p>
+          </div>
+        </div>
+
+        <div class="poem-footer">
+          <div class="article-end" aria-hidden="true"></div>
+          <p class="article-byline">Written by <span>Piyush Yadav</span></p>
+          <a class="back-link" href="../poetry.html">← Back to poetry</a>
+        </div>
       </div>
     </article>
   </main>
