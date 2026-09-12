@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A faceless man facing an expert version of himself in a mirror</title>
+  <desc id="desc">A dark cinematic room with a casually dressed faceless man looking into a large golden mirror. In the reflection, the same faceless figure appears as a confident expert in a tailored suit inside a warm study.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111416"/>
+      <stop offset=".55" stop-color="#242321"/>
+      <stop offset="1" stop-color="#111112"/>
+    </linearGradient>
+    <radialGradient id="wallGlow" cx="64%" cy="44%" r="58%">
+      <stop offset="0" stop-color="#7d6546" stop-opacity=".28"/>
+      <stop offset=".55" stop-color="#332c24" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#111416" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2723"/>
+      <stop offset="1" stop-color="#101112"/>
+    </linearGradient>
+    <linearGradient id="mirrorFrame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d5225"/>
+      <stop offset=".2" stop-color="#d8b56a"/>
+      <stop offset=".5" stop-color="#7e5d2b"/>
+      <stop offset=".75" stop-color="#e3c579"/>
+      <stop offset="1" stop-color="#5c411b"/>
+    </linearGradient>
+    <linearGradient id="mirrorWorld" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a2018"/>
+      <stop offset=".46" stop-color="#56412d"/>
+      <stop offset="1" stop-color="#171719"/>
+    </linearGradient>
+    <radialGradient id="mirrorGlow" cx="54%" cy="39%" r="62%">
+      <stop offset="0" stop-color="#f4d99a" stop-opacity=".46"/>
+      <stop offset=".42" stop-color="#c58d49" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#2a2018" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ded9ce"/>
+      <stop offset="1" stop-color="#f5f0e7"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24272a"/>
+      <stop offset=".55" stop-color="#111315"/>
+      <stop offset="1" stop-color="#30343a"/>
+    </linearGradient>
+    <linearGradient id="casual" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#343333"/>
+      <stop offset="1" stop-color="#17191a"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
+      <feOffset dx="0" dy="18" result="o"/>
+      <feColorMatrix in="o" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .6 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+    <clipPath id="mirrorClip"><rect x="874" y="85" width="574" height="704" rx="8"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#room)"/>
+  <rect width="1600" height="900" fill="url(#wallGlow)"/>
+  <path d="M0 650 H1600 V900 H0Z" fill="url(#floor)"/>
+  <path d="M0 654 H1600" stroke="#77634b" stroke-opacity=".18"/>
+
+  <!-- window and cool exterior light -->
+  <rect x="80" y="90" width="350" height="430" rx="3" fill="#0d1519" stroke="#4a4d4b" stroke-width="8"/>
+  <path d="M255 92V518M82 305H428" stroke="#2e393d" stroke-width="7"/>
+  <path d="M90 500 C180 425 255 450 426 352 V517 H90Z" fill="#172126"/>
+  <circle cx="330" cy="160" r="48" fill="#b9c2bd" opacity=".08"/>
+  <path d="M430 100 C520 210 500 490 420 625" fill="none" stroke="#91a2a0" stroke-width="70" opacity=".035" filter="url(#soft)"/>
+
+  <!-- sparse room objects -->
+  <rect x="78" y="690" width="345" height="108" rx="8" fill="#171717"/>
+  <rect x="108" y="645" width="150" height="58" rx="5" fill="#28241f"/>
+  <rect x="118" y="631" width="122" height="14" rx="4" fill="#7a654a" opacity=".48"/>
+  <rect x="138" y="596" width="46" height="36" rx="5" fill="#111"/>
+  <path d="M181 607 q22 0 22 13 q0 14-22 13" fill="none" stroke="#111" stroke-width="7"/>
+  <rect x="300" y="620" width="100" height="16" fill="#1a1918" transform="rotate(-7 300 620)"/>
+  <rect x="312" y="603" width="86" height="14" fill="#38332d" transform="rotate(-7 312 603)"/>
+
+  <!-- mirror shadow -->
+  <rect x="842" y="55" width="638" height="766" rx="14" fill="#000" opacity=".44" filter="url(#soft)"/>
+
+  <!-- reflected world -->
+  <g clip-path="url(#mirrorClip)">
+    <rect x="874" y="85" width="574" height="704" fill="url(#mirrorWorld)"/>
+    <rect x="874" y="85" width="574" height="704" fill="url(#mirrorGlow)"/>
+
+    <!-- bookshelves -->
+    <rect x="904" y="120" width="145" height="470" fill="#211a15"/>
+    <rect x="918" y="139" width="117" height="16" fill="#76593b"/>
+    <rect x="918" y="228" width="117" height="13" fill="#76593b"/>
+    <rect x="918" y="322" width="117" height="13" fill="#76593b"/>
+    <rect x="918" y="416" width="117" height="13" fill="#76593b"/>
+    <rect x="918" y="510" width="117" height="13" fill="#76593b"/>
+    <g fill="#644c36">
+      <rect x="925" y="164" width="13" height="58"/><rect x="942" y="158" width="18" height="64"/><rect x="965" y="169" width="12" height="53"/><rect x="982" y="154" width="20" height="68"/><rect x="1006" y="171" width="17" height="51"/>
+      <rect x="925" y="247" width="17" height="69"/><rect x="946" y="258" width="12" height="58"/><rect x="963" y="244" width="17" height="72"/><rect x="985" y="262" width="14" height="54"/><rect x="1004" y="250" width="20" height="66"/>
+      <rect x="925" y="340" width="18" height="70"/><rect x="948" y="349" width="13" height="61"/><rect x="966" y="335" width="19" height="75"/><rect x="990" y="348" width="12" height="62"/><rect x="1007" y="342" width="17" height="68"/>
+      <rect x="925" y="436" width="14" height="68"/><rect x="944" y="449" width="18" height="55"/><rect x="967" y="433" width="16" height="71"/><rect x="988" y="451" width="14" height="53"/><rect x="1007" y="442" width="17" height="62"/>
+    </g>
+
+    <!-- desk, globe and chair -->
+    <rect x="914" y="588" width="240" height="26" rx="4" fill="#4d3725"/>
+    <rect x="933" y="612" width="20" height="135" fill="#302218"/>
+    <rect x="1114" y="612" width="20" height="135" fill="#302218"/>
+    <circle cx="1008" cy="555" r="44" fill="#7b6033" stroke="#d6b06a" stroke-width="4"/>
+    <ellipse cx="1008" cy="555" rx="42" ry="15" fill="none" stroke="#d6b06a" stroke-width="2" opacity=".75"/>
+    <path d="M1008 511V599M974 536c30 8 50 34 68 38" fill="none" stroke="#d6b06a" stroke-width="2"/>
+    <path d="M1008 599v26M982 629h52" stroke="#d6b06a" stroke-width="5"/>
+    <rect x="1295" y="570" width="112" height="155" rx="24" fill="#2b2320"/>
+
+    <!-- distant architecture / skyline -->
+    <g opacity=".25" fill="#c9ab7d">
+      <rect x="1180" y="175" width="20" height="170"/><rect x="1208" y="215" width="18" height="130"/><rect x="1233" y="148" width="32" height="197"/><path d="M1233 148l16-42 16 42z"/><rect x="1275" y="235" width="18" height="110"/><rect x="1300" y="190" width="24" height="155"/><rect x="1333" y="220" width="18" height="125"/>
+    </g>
+
+    <!-- expert reflection -->
+    <ellipse cx="1224" cy="695" rx="151" ry="38" fill="#000" opacity=".35" filter="url(#soft)"/>
+    <circle cx="1225" cy="244" r="60" fill="#b79d7b"/>
+    <path d="M1167 238c14-80 103-82 118-12-17-23-46-34-70-30-18 3-34 16-48 42z" fill="#1e1d1c"/>
+    <!-- faceless smooth face -->
+    <ellipse cx="1226" cy="257" rx="50" ry="55" fill="#bba180"/>
+    <path d="M1187 304 L1168 336 L1108 365 L1135 675 L1318 675 L1342 365 L1280 336 L1263 304Z" fill="url(#suit)"/>
+    <path d="M1193 307 L1225 373 L1259 307 L1277 337 L1225 405 L1175 337Z" fill="url(#shirt)"/>
+    <path d="M1217 358 L1234 358 L1243 500 L1225 526 L1208 500Z" fill="#2b241f"/>
+    <path d="M1168 337 L1108 365 L1065 548 Q1058 577 1083 589 Q1107 598 1122 570 L1160 455Z" fill="#17191b"/>
+    <path d="M1280 337 L1342 365 L1383 548 Q1391 577 1368 589 Q1343 599 1328 570 L1290 455Z" fill="#17191b"/>
+    <path d="M1137 520c-23 54-39 100-49 145h55l35-121zM1313 520c25 54 40 99 49 145h-55l-35-121z" fill="#111315"/>
+    <path d="M1136 669 L1120 776 L1195 776 L1207 669ZM1243 669 L1256 776 L1333 776 L1315 669Z" fill="#151719"/>
+    <rect x="1111" y="761" width="94" height="22" rx="8" fill="#0e0f10"/><rect x="1247" y="761" width="96" height="22" rx="8" fill="#0e0f10"/>
+    <path d="M1159 367 Q1224 413 1292 367" fill="none" stroke="#596068" stroke-width="3" opacity=".55"/>
+  </g>
+
+  <!-- mirror glass sheen -->
+  <rect x="874" y="85" width="574" height="704" rx="8" fill="#d9dfdc" opacity=".035"/>
+  <path d="M902 94 L1122 94 L914 775 L884 775Z" fill="#fff" opacity=".026"/>
+
+  <!-- ornate frame -->
+  <rect x="850" y="60" width="622" height="754" rx="11" fill="none" stroke="url(#mirrorFrame)" stroke-width="32" filter="url(#shadow)"/>
+  <rect x="866" y="76" width="590" height="722" rx="6" fill="none" stroke="#6d4e22" stroke-width="5"/>
+  <rect x="838" y="48" width="646" height="778" rx="15" fill="none" stroke="#2d2010" stroke-width="6"/>
+
+  <!-- present self -->
+  <ellipse cx="634" cy="790" rx="173" ry="42" fill="#000" opacity=".5" filter="url(#soft)"/>
+  <circle cx="620" cy="305" r="62" fill="#a68d70"/>
+  <path d="M565 292c5-62 98-94 121-9-10-12-33-31-60-30-29 1-47 17-61 39z" fill="#161719"/>
+  <ellipse cx="619" cy="319" rx="51" ry="55" fill="#a99073"/>
+  <!-- subtle head turn toward mirror -->
+  <path d="M661 325q18 13 8 34" fill="none" stroke="#8d755c" stroke-width="3" opacity=".5"/>
+  <path d="M572 364 Q616 342 665 366 L720 402 L694 645 L548 645 L520 401Z" fill="url(#casual)"/>
+  <path d="M521 400 L478 423 L446 589 Q441 620 465 629 Q488 636 502 606 L536 471Z" fill="#242526"/>
+  <path d="M719 402 L755 431 L786 578 Q792 608 770 619 Q747 628 733 596 L704 478Z" fill="#242526"/>
+  <path d="M465 626 Q472 650 494 651 L504 628Z" fill="#9d856a"/>
+  <path d="M772 617 Q765 642 744 645 L733 621Z" fill="#9d856a"/>
+  <path d="M550 640 L531 786 L603 786 L616 655Z" fill="#202223"/>
+  <path d="M627 655 L640 786 L716 786 L693 640Z" fill="#1b1d1e"/>
+  <rect x="515" y="775" width="103" height="27" rx="10" fill="#171819"/><rect x="633" y="775" width="105" height="27" rx="10" fill="#171819"/>
+  <path d="M552 389 Q616 416 690 389" fill="none" stroke="#4d4d4d" stroke-width="3" opacity=".5"/>
+
+  <!-- visual link between present and aspirational self -->
+  <path d="M715 402 C780 345 824 309 872 292" fill="none" stroke="#d2aa68" stroke-width="2" opacity=".24"/>
+  <circle cx="872" cy="292" r="5" fill="#d8b56a" opacity=".55"/>
+
+  <!-- floor reflection -->
+  <path d="M876 813 L1465 813 L1518 900 L814 900Z" fill="#b88649" opacity=".055"/>
+  <path d="M539 807 L718 807 L762 900 L486 900Z" fill="#fff" opacity=".018"/>
+
+  <!-- vignette -->
+  <rect width="1600" height="900" fill="none" stroke="#000" stroke-width="90" opacity=".22"/>
+</svg>
